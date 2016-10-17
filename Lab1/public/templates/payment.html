@@ -1,0 +1,114 @@
+<div class="container" ng-controller="cartCtrl">
+
+	<div class="col-md-offset-2 col-xs-offset-2 col-xs-8 col-md-8">
+
+		<div class="panel panel-info">
+
+			<div class="panel-heading">
+				<div class="panel-title">
+					<div class="row">
+						<div class="col-xs-6 col-md-6">
+							<h5>
+								<span class="glyphicon glyphicon-credit-card">&nbsp;</span>
+								Enter your Card Details
+							</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="panel-body">
+
+				<form class="form-horizontal" style="padding-right: 10px"
+					ng-submit="makePayment()">
+
+					<div class="form-group">
+						<label class="col-md-3 col-xs-3 control-label"
+							for="cardHolderName">Card Holder's Name</label>
+						<div class="col-md-9 col-xs-9">
+							<input type="text" class="form-control" name="cardHolderName"
+								id="cardHolderName" ng-model="cardHolderName" required>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label class="col-md-3 col-xs-3 control-label" for="cardNum">Card
+							Number</label>
+						<div class="col-md-9 col-xs-9">
+							<input type="text" class="form-control" name="cardNum"
+								id="cardNum" ng-model="cardNum" required>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label class="col-md-3 col-xs-3 control-label" for="monthOfExpiry">Card
+							Expiry Date</label>
+
+						<div class="col-md-6 col-xs-6">
+
+							<div class="col-md-6 col-xs-6">
+								<select class="form-control" name="monthOfExpiry"
+									id="monthOfExpiry" ng-model="monthOfExpiry" required>
+									<option>MM</option>
+									<option value="01">Jan (01)</option>
+									<option value="02">Feb (02)</option>
+									<option value="03">Mar (03)</option>
+									<option value="04">Apr (04)</option>
+									<option value="05">May (05)</option>
+									<option value="06">Jun (06)</option>
+									<option value="07">Jul (07)</option>
+									<option value="08">Aug (08)</option>
+									<option value="09">Sep (09)</option>
+									<option value="10">Oct (10)</option>
+									<option value="11">Nov (11)</option>
+									<option value="12">Dec (12)</option>
+								</select>
+							</div>
+
+							<div class="col-md-6 col-xs-6">
+								<select class="form-control" name="yearOfExpiry"
+									id="yearOfExpiry" ng-model="yearOfExpiry" required>
+									<option>YY</option>
+									<option value="2016">2016</option>
+									<option value="2017">2017</option>
+									<option value="2018">2018</option>
+									<option value="2019">2019</option>
+									<option value="2020">2020</option>
+									<option value="2021">2021</option>
+									<option value="2022">2022</option>
+									<option value="2023">2023</option>
+									<option value="2024">2024</option>
+									<option value="2025">2025</option>
+								</select>
+							</div>
+
+						</div>
+
+						<div class="col-md-3 col-xs-3">
+							<label class="col-md-4 col-xs-4 control-label" for="cardCVV">CVV</label>
+							<div class="col-md-8 col-xs-8">
+								<input type="password" class="form-control" name="cardCVV"
+									id="cardCVV" ng-model="cardCVV" ng-maxlength="3" required>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="form-group">
+						<div class="col-md-offset-3 col-xs-offset-3 col-xs-6 col-md-6">
+							<button type="submit" class="btn btn-primary btn-block">Pay
+								Now</button>
+						</div>
+					</div>
+
+				</form>
+
+			</div>
+
+			<div class="panel-heading"></div>
+
+		</div>
+
+	</div>
+
+</div>

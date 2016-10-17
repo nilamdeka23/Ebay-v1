@@ -1,0 +1,36 @@
+{"level":"info","message":"USER with EMAIL: tom@gmail.com tries SIGNING IN","timestamp":"2016-10-16T23:05:42.629Z"}
+{"level":"info","message":"USER with EMAIL: tom@gmail.com and USER ID: 10 SIGNED IN SUCCESSFULLY","timestamp":"2016-10-16T23:05:42.634Z"}
+{"level":"info","message":"USER ID: 10 BROWSED PRODUCTS PAGE","timestamp":"2016-10-16T23:05:43.047Z"}
+{"level":"info","message":"USER ID: 10 BROWSED PRODUCTS PAGE","timestamp":"2016-10-16T23:05:43.049Z"}
+{"level":"info","message":"USER ID: 10 BROWSED PRODUCTS PAGE","timestamp":"2016-10-16T23:05:43.223Z"}
+{"level":"info","message":"USER ID: 10 BROWSED PRODUCTS PAGE","timestamp":"2016-10-16T23:06:29.957Z"}
+{"level":"info","message":"USER ID: 10 BROWSED PRODUCTS PAGE","timestamp":"2016-10-16T23:06:29.958Z"}
+{"level":"info","message":"USER ID: 10 BROWSED PRODUCTS PAGE","timestamp":"2016-10-16T23:06:30.094Z"}
+{"level":"info","message":"USER ID: 10 VIEWED SALES HISTORY","timestamp":"2016-10-16T23:06:32.990Z"}
+{"level":"info","message":"USER ID: 10 VIEWED SALES HISTORY","timestamp":"2016-10-16T23:06:32.991Z"}
+{"level":"info","message":"USER ID: 10 VIEWED PURCHASE HISTORY","timestamp":"2016-10-16T23:06:33.872Z"}
+{"level":"info","message":"USER ID: 10 VIEWED PURCHASE HISTORY","timestamp":"2016-10-16T23:06:33.873Z"}
+{"level":"info","message":"USER ID: 10 VIEWED CART ITEMS","timestamp":"2016-10-16T23:06:34.405Z"}
+{"level":"info","message":"USER ID: 10 VIEWED CART ITEMS","timestamp":"2016-10-16T23:06:34.406Z"}
+{"level":"info","message":"USER ID: 10 tried UPDATING an ITEM  with PRODUCT ID: 1 from the CART","timestamp":"2016-10-16T23:06:38.157Z"}
+{"level":"info","message":"USER ID: 10 BROWSED PRODUCTS PAGE","timestamp":"2016-10-16T23:06:40.843Z"}
+{"level":"info","message":"USER ID: 10 BROWSED PRODUCTS PAGE","timestamp":"2016-10-16T23:06:40.844Z"}
+{"level":"info","message":"USER ID: 10 BROWSED PRODUCTS PAGE","timestamp":"2016-10-16T23:06:40.998Z"}
+{"level":"info","message":"USER ID: undefined LISTED PRODUCT for SALE of PRODUCT NAME: Horse","timestamp":"2016-10-16T23:39:55.457Z"}
+{"level":"info","message":"SIGNIN PAGE is HIT","timestamp":"2016-10-16T23:40:05.662Z"}
+{"level":"info","message":"USER with EMAIL: tom@gmail.com tries SIGNING IN","timestamp":"2016-10-16T23:40:18.804Z"}
+{"level":"info","message":"USER with EMAIL: tom@gmail.com and USER ID: 10 SIGNED IN SUCCESSFULLY","timestamp":"2016-10-16T23:40:18.808Z"}
+{"level":"info","message":"USER ID: 10 BROWSED PRODUCTS PAGE","timestamp":"2016-10-16T23:40:19.212Z"}
+{"level":"info","message":"USER ID: 10 BROWSED PRODUCTS PAGE","timestamp":"2016-10-16T23:40:19.214Z"}
+{"level":"info","message":"USER ID: 10 BROWSED PRODUCTS PAGE","timestamp":"2016-10-16T23:40:19.368Z"}
+{"level":"info","message":"USER ID: 10 LISTED PRODUCT for SALE of PRODUCT NAME: Horse","timestamp":"2016-10-16T23:40:37.193Z"}
+{"level":"info","message":"SIGNIN PAGE is HIT","timestamp":"2016-10-16T23:41:11.074Z"}
+{"level":"info","message":"USER with EMAIL: v@k.com tries SIGNING IN","timestamp":"2016-10-16T23:41:18.551Z"}
+{"level":"info","message":"USER with EMAIL: v@k.com and USER ID: 12 SIGNED IN SUCCESSFULLY","timestamp":"2016-10-16T23:41:18.554Z"}
+{"level":"info","message":"USER ID: 12 BROWSED PRODUCTS PAGE","timestamp":"2016-10-16T23:41:21.055Z"}
+{"level":"info","message":"USER ID: 12 BROWSED PRODUCTS PAGE","timestamp":"2016-10-16T23:41:21.056Z"}
+{"level":"info","message":"SIGNIN PAGE is HIT","timestamp":"2016-10-16T23:42:25.775Z"}
+{"level":"info","message":"USER with EMAIL: bid@b.com tries SIGNING UP","timestamp":"2016-10-16T23:43:30.022Z"}
+{"level":"info","message":"USER with EMAIL: bid@b.com and USER ID: 13 SIGNED UP SUCCESSFULLY","timestamp":"2016-10-16T23:43:30.091Z"}
+{"level":"info","message":"USER ID: 13 BROWSED PRODUCTS PAGE","timestamp":"2016-10-16T23:43:30.503Z"}
+{"level":"info","message":"USER ID: 13 BROWSED PRODUCTS PAGE","timestamp":"2016-10-16T23:43:30.504Z"}

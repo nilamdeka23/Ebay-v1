@@ -1,0 +1,58 @@
+<div class="container" ng-controller="purchaseCtrl">
+	<div class="col-xs-2 col-md-2"></div>
+	<div class="col-xs-8 col-md-8">
+
+		<div class="panel panel-info">
+
+			<div class="panel-heading">
+				<div class="panel-title">
+					<div class="row">
+						<div class="col-xs-6 col-md-6">
+							<h4>
+								<span class="glyphicon glyphicon-shopping-cart"></span> Your
+								Purchase History
+							</h4>
+						</div>
+						<div class="col-xs-6 col-md-6">
+							<h4 class="text-right" ng-hide="!recordsFound">
+								Total Expenses: $<strong>{{total}}"</strong>
+							</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="alert alert-info text-center" role="alert"
+				ng-hide="recordsFound"
+				style="margin-top: 10px; margin-left: 10px; margin-right: 10px">Sorry!
+				No records found. You need to first purchase products to view your
+				purchase history.</div>
+
+			<div class="panel-body">
+
+				<table class="table table-hover" style="margin: 5px"
+					ng-hide="!recordsFound">
+					<thead>
+						<th class="text-center">Product Name</th>
+						<th class="text-center">Product Description</th>
+						<th class="text-center">Product Price</th>
+						<th class="text-center">Quantity Purchased</th>
+					</thead>
+					<tbody>
+						<tr ng-repeat="record in records" class="text-center">
+							<td>{{record.productName}}</td>
+							<td>{{record.productDesc}}</td>
+							<td>{{record.productPrice}}</td>
+							<td>{{record.totalQty}}</td>
+						</tr>
+					</tbody>
+				</table>
+
+			</div>
+
+		</div>
+
+	</div>
+	<div class="col-xs-2 col-md-2"></div>
+
+</div>

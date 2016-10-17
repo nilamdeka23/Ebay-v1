@@ -1,0 +1,117 @@
+<div class="container" ng-controller="profileCtrl">
+
+	<div class="col-md-2 col-xs-1"></div>
+
+	<div class="col-md-8 col-xs-10">
+
+		<form class="form-horizontal" ng-submit="update()"
+			style="background: white; margin-top: 20px; margin-bottom: 20px; padding: 20px">
+
+			<div class="form-group">
+				<div class="col-md-4 col-xs-6"></div>
+				<h4 class="col-md-6 col-xs-6">&nbsp;&nbsp;&nbsp;&nbsp;User
+					Profile</h4>
+			</div>
+
+			<div class="form-group">
+				<label class="col-md-4 col-xs-6 control-label" for="firstName">First
+					Name</label>
+				<div class="col-md-4 col-xs-6">
+					<input id="firstName" name="firstName"
+						class="form-control input-md" type="text" ng-model="firstName"
+						ng-disabled="disabled" required>
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label class="col-md-4 col-xs-6 control-label" for="lastName">Last
+					Name</label>
+				<div class="col-md-4 col-xs-6">
+					<input id="lastName" name="lastName" class="form-control input-md"
+						type="text" ng-model="lastName" ng-disabled="disabled" required>
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label class="col-md-4 col-xs-6 control-label" for="email">Email</label>
+				<div class="col-md-4 col-xs-6">
+					<input id="email" name="email" class="form-control input-md"
+						type="text" ng-model="email" ng-disabled="disabled" required>
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label class="col-md-4 col-xs-6 control-label" for="password">Password</label>
+				<div class="col-md-4 col-xs-6">
+					<input id="password" name="password" class="form-control input-md"
+						type="password" ng-model="password" ng-disabled="disabled"
+						required>
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label class="col-md-4 col-xs-6 control-label" for="about">About</label>
+				<div class="col-md-4 col-xs-6">
+					<textarea class="form-control" id="about" name="about"
+						ng-model="about" ng-disabled="disabled"></textarea>
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label class="col-md-4 col-xs-6 control-label" for="dob">Date
+					of birth</label>
+				<div class="col-md-4 col-xs-6">
+					<input id="dob" name="dob" class="form-control input-md"
+						type="date" ng-model="dob" ng-disabled="disabled">
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label class="col-md-4 col-xs-6 control-label" for="contact">Mobile
+					No.</label>
+				<div class="col-md-4 col-xs-6">
+					<div class="input-group">
+						<span class="input-group-addon">+1</span> <input id="contact"
+							name="contact" class="form-control" required type="text"
+							ng-model="contact" ng-disabled="disabled">
+					</div>
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label class="col-md-4 col-xs-6 control-label" for="address">Address</label>
+				<div class="col-md-4 col-xs-6">
+					<textarea class="form-control" id="address" name="address"
+						ng-model="address" ng-disabled="disabled"></textarea>
+				</div>
+			</div>
+
+			<div class="form-group" style="margin-top: 10px">
+				<div class="col-md-2 col-xs-2"></div>
+				<div class="col-md-4 col-xs-6 text-right">
+					<button style="margin-right: 10px" type="button"
+						class="btn btn-primary" ng-click="edit()">
+						<span class="glyphicon glyphicon-pencil" aria-hidden="true">&nbsp;</span>Edit
+					</button>
+				</div>
+				<div class="col-md-4 col-xs-6 text-left">
+					<button style="margin-left: -10px" type="submit"
+						class="btn btn-primary" ng-disabled="disabled">
+						<span class="glyphicon glyphicon-floppy-save" aria-hidden="true">&nbsp;</span>Update
+					</button>
+				</div>
+			</div>
+
+			<div class="alert alert-success text-center" role="alert"
+				ng-hide="successMsg">Well done! You successfully updated your
+				profile.</div>
+			<div class="alert alert-danger text-center" role="alert"
+				ng-hide="failureMsg">Oh snap! Try submitting again.</div>
+
+		</form>
+
+	</div>
+
+	<div class="col-md-2 col-xs-1"></div>
+
+</div>

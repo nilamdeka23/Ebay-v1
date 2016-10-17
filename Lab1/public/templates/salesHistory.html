@@ -1,0 +1,57 @@
+<div class="container" ng-controller="salesCtrl">
+	<div class="col-xs-2 col-md-2"></div>
+	<div class="col-xs-8 col-md-8">
+
+		<div class="panel panel-info">
+
+			<div class="panel-heading">
+				<div class="panel-title">
+					<div class="row">
+						<div class="col-xs-6 col-md-6">
+							<h4>
+								<span class="glyphicon glyphicon-shopping-cart"></span> Your
+								Sales History
+							</h4>
+						</div>
+						<div class="col-xs-6 col-md-6">
+							<h4 class="text-right" ng-hide="!recordsFound">
+								Total Earnings: $<strong>{{total}}"</strong>
+							</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="alert alert-info text-center" role="alert"
+				ng-hide="recordsFound"
+				style="margin-top: 10px; margin-left: 10px; margin-right: 10px">Sorry!
+				No records found. You don't have any sales yet.</div>
+
+			<div class="panel-body">
+
+				<table class="table table-hover" style="margin: 5px"
+					ng-hide="!recordsFound">
+					<thead>
+						<th class="text-center">Product Name</th>
+						<th class="text-center">Product Description</th>
+						<th class="text-center">Product Price</th>
+						<th class="text-center">Quantity Sold</th>
+					</thead>
+					<tbody>
+						<tr ng-repeat="record in records" class="text-center">
+							<td>{{record.productName}}</td>
+							<td>{{record.productDesc}}</td>
+							<td>{{record.price}}</td>
+							<td>{{record.qtySold}}</td>
+						</tr>
+					</tbody>
+				</table>
+
+			</div>
+
+		</div>
+
+	</div>
+	<div class="col-xs-2 col-md-2"></div>
+
+</div>

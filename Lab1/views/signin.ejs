@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> </title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+<script src="angularjs/signin.js"></script>
+</head>
+
+<body ng-app="signIn" ng-controller="signInCtrl" style="background:#F7F7F7">
+
+<img style="margin: 0 auto; margin-top:-10px; display:block" src="assets/ebay-signin-logo.png"/>
+
+  <div style="margin-top:-10px">
+
+    <div class="col-md-4 col-xs-2"></div>
+
+    <div class="col-md-4 col-xs-8">
+
+      <ul class="nav nav-tabs nav-justified">
+        <li class="active">
+          <a data-toggle="pill" href="#sign_in"> <span class="glyphicon glyphicon-circle-arrow-right" aria-hidden="true">&nbsp;</span>Sign In</a>
+        </li>
+        <li>
+          <a data-toggle="pill" href="#sign_up">
+            <span class="glyphicon glyphicon-plus-sign" aria-hidden="true">&nbsp;</span>Sign Up</a>
+        </li>
+      </ul>
+
+      <div class="tab-content" style="background:white; border:1px solid #ddd; border-top: none">
+
+        <div id="sign_in" class="tab-pane fade in active">
+
+          <form ng-submit="signIn()" style="padding: 50px">
+            <div class="form-group">
+              <label for="sign_in_email">Email address</label>
+              <input type="email" class="form-control" id="sign_in_email" ng-model="email" required>
+            </div>
+            <div class="form-group">
+              <label for="sign_in_pwd">Password</label>
+              <input type="password" class="form-control" id="sign_in_pwd" ng-model="password" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+          </form>
+
+        </div>
+
+        <div id="sign_up" class="tab-pane fade">
+
+          <form ng-submit="signUp()" style="padding: 50px">
+            <div class="form-group">
+              <label for="firstname">First Name</label>
+              <input type="text" class="form-control" id="firstname" ng-model="firstName" required>
+            </div>
+            <div class="form-group">
+              <label for="lastname">Last Name</label>
+              <input type="text" class="form-control" id="lastname" ng-model="lastName" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email address</label>
+              <input type="email" class="form-control" id="email" ng-model="newEmail" required>
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" class="form-control" id="password" ng-model="newPassword" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Register</button>
+          </form>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="col-md-4 col-xs-2"></div>
+
+  </div>
+
+</body>
+
+</html>

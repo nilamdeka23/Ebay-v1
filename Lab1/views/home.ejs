@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>
+     Ebay
+    </title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+	<script src="angularjs/home.js"></script>
+  </head>
+
+  <body ng-app="home" style="background: #F7F7F7" ng-controller="homeCtrl" >
+
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a style="padding: 0px 10px;
+margin-top: -8px" class="navbar-brand" href="#"><img src="assets/ebay-navbar-logo.png" /></a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Hi <%= firstname %>!<span class="caret"></a>
+              <ul class="dropdown-menu">
+                <li><a href="#profile">View My Profile</a></li>
+                <li><a href="/signout">Signout <span class="text-muted" style="margin-left: 2px; color:blue">{Last Login: <%= lastLogin.replace('.000Z',' ') %>}</a></li>
+              </ul>
+            </li>
+            <li class="active"><a href="#">Buy <span class="sr-only">(current)</span></a></li>
+            <li><a href="#sell">Sell</a></li>
+
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">my eBay<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#purchases">Purchase History</a></li>
+                <li><a href="#sales">Sale History</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#cart"><img src="assets/cart-icon.png" /></a>
+            </li>
+
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container-fluid -->
+    </nav>
+
+    <div ng-view></div>
+
+  </body>
+
+</html>
