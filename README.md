@@ -1,4 +1,4 @@
-# Lab1-Ebay
+# Ebay-v1
 Simple Market Place Website(Ebay-clone) using MEAN Stack 
 
 ###Version-1
